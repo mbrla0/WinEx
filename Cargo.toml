@@ -30,5 +30,6 @@ features = [
     "winerror",
     "dwmapi",
     "uxtheme",
-    "winuser"
+    "winuser",
+    "errhandlingapi"
 ]
