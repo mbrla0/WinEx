@@ -2,6 +2,9 @@
 name = "winex"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Matheus Branco Borella <dark.ryu.550@gmail.com>"]
+categories = ["gui"]
 description = """
 Cross-platform window eye-candy and features for those who need a little extra from their windows.
 """
