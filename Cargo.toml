@@ -1,0 +1,34 @@
+[package]
+name = "winex"
+version = "0.1.0"
+edition = "2021"
+description = """
+Cross-platform window eye-candy and features for those who need a little extra from their windows.
+"""
+
+[dependencies]
+raw-window-handle = "0.4"
+thiserror = "1"
+lazy_static = "1"
+log = "0.4"
+
+[dev-dependencies]
+winit = "0.26"
+
+[target.'cfg(windows)'.dependencies]
+cstr = "0.2"
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3"
+features = [
+    "basetsd",
+    "winnt",
+    "winbase",
+    "windef",
+    "minwindef",
+    "ntdef",
+    "winerror",
+    "dwmapi",
+    "uxtheme",
+    "winuser"
+]
